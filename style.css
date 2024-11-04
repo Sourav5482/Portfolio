@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333333;
+  }
+.page1{
+min-height: 100vh;
+
+color: white;
+display: flex;
+
+
+}
+
+.nav {
+    width: 100vw;
+    background-color: rgba(249, 249, 249, 0.8); 
+    backdrop-filter: blur(10px); 
+    position: fixed;
+    display: flex;
+    padding: 1.5vw;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+.nav a{
+        position: relative;
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 500.1;
+    color: #111;
+    /* display: none; */
+}
+.nav span{
+    display: block;
+}
+.nav i{
+    display: none;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    height: 2px;
+    width: 100%;
+    background-color: #f1c40f   ; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav a:hover::after {
+    transform: scaleX(1); 
+}
+.nav2{
+    /* background-color: rgb(251, 255, 14); */
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+/* GITHUB */
+.nav a[href="https://github.com/Sourav5482"]:hover {
+    background-color: #6cc24a; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 0.5vw;
+}
+
+/* FaceBook */
+.nav a[href="https://www.facebook.com/share/P79yGFpHkBWhzv1G/"]:hover {
+    background-color: #8b9dc3; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 0.5vw;
+}
+
+/* Instagram */
+.nav a[href="https://www.instagram.com/sourav_photography_1.4?igsh=dmJtNmU2ZDM3OG01"]:hover {
+    background-color: #f77737; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 0.5vw; 
+}
+
+/* LinkedIn */
+.nav a[href="https://www.linkedin.com/in/sourav-das-12000a313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"]:hover {
+    background-color: #00a0dc; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 0.5vw; 
+}
+
+/* Twitter */
+.nav a[href="https://x.com/SouravDas5482"]:hover {
+    background-color: #1a91da; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 0.5vw;
+}
+
+.left{
+    width: 50%;
+    margin-top: -25vh;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    
+}
+.left h1{
+    padding-top: 8vh;
+    color: #111;
+    /* line-height: 10.5vh; */
+    
+}
+#sourav{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: royalblue;
+   
+}
+
+.left p{
+    margin-top: 2vh;
+    color: #111;
+    font-size: 2.8vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    white-space: wrap;
+    padding-left: 3.8vw ;
+    /* background-color: #f0f0f0; */
+    width: 85%;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    box-shadow: 2px 2px 10px black;
+}
+
+.left h5{
+    color: #ffffff;
+    /* background-color: royalblue; */
+    background-color: #4169e1;
+    border-radius: 0.5vw;
+    margin-top: 3vh;
+    margin-right: 2vh;
+    padding: 1vh;
+    
+}
+.left h5:hover{
+    background-color: #ffa500; /* Soft Orange */
+    /* background-color: rgb(19, 47, 128); */
+    box-shadow:  3px 3px 10px black;
+    cursor: pointer;
+}
+
+.right {
+    width: 50%;
+    margin-top: 15vh;
+   
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-highlights h3,
+.skills h3,
+.learning h3 {
+    font-size: 1.6em;
+    color: #4169e1;
+    margin-bottom: 0.5em;
+}
+
+.project-list, .cloned-websites {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.project-list li {
+    margin: 0.3em 0;
+    transition: transform 0.3s, color 0.3s;
+    color: #333;
+}
+
+.project-list li:hover {
+    transform: scale(1.05);
+    color: #ffa500;
+}
+
+.cloned-websites li {
+    font-size: 1em;
+    color: #555;
+    margin-left: 1em;
+    list-style-type: disc;
+}
+
+.skill-icons {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.skill-icons img {
+    width: 40px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.15);
+    filter: brightness(1.2);
+}
+
+.learning {
+    position: relative;
+}
+
+.learning h3 {
+    font-size: 1.6em;
+    color: #4169e1;
+    margin-bottom: 0.5em;
+}
+
+.learning p {
+    font-size: 1.5em;
+    position: relative;
+    color: transparent; 
+    background: linear-gradient(to right, #4169e1, #ffa500);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    animation: color-shift 3s ease-in-out infinite;
+    padding: 0.1em; /* Padding to ensure the gradient fills the text */
+    display: inline-block; /* To ensure the background covers the text */
+}
+
+@keyframes color-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+ 
+    .nav span{
+        display: none;
+    }
+    .nav i{
+        display: block;
+    }
+    .nav a{
+        text-decoration: none;
+        font-size: 5vw;
+        font-weight: 500.1;
+        color: rgb(155, 41, 41);
+    }
+    .nav2{
+        /* background-color: rgb(251, 255, 14); */
+        width: 55vw;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .page1{
+        /* min-height: 100vh; */
+        /* background-color: rgb(120, 191, 88); */
+        color: white;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        
+        }
+        .left{
+            width: 100%;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            font-size: 5.5vw;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2vh;
+            margin-top: 1vh;
+            
+        }
+        .left p{
+            margin-top: 2vh;
+            color: #111;
+            font-size: 1.5vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            white-space: wrap;
+            /* background-color: red; */
+            width: 70%;
+        }
+       
+        .left h5{
+            color: #111;
+            background-color: royalblue;
+            border-radius: 0.5vw;
+            margin-top: 2vh;
+            margin-right: 2vh;
+            padding: 1vh;
+        }
+        .left h1{
+            
+            color: #111;
+            /* line-height: 10.5vh; */
+            
+        }
+
+
+        .right {
+            width: 100%;
+            margin-top: 5vh;
+           
+            padding-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }  
+       
+
+}
